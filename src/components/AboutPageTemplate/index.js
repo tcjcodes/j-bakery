@@ -1,33 +1,28 @@
 import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
+import PageHeader from '../PageHeader'
 
 const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
-      <section className='hero is-primary is-bold is-medium'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  <h1 className='title'>
-                    {title}
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHeader title={title} />
       <section className='section section--gradient'>
         <div className='container'>
           <div className='columns'>
-            <div className='column is-10 is-offset-1'>
+            <div className='column is-offset-1 is-4'>
+              <figure className='image is-3by4'>
+                <img className=''
+                  src='https://placeimg.com/600/900/people'
+                  alt='About J' />
+              </figure>
+            </div>
+            <div className='column is-6'>
               <div className='section'>
                 <PageContent className='content' content={content} />
+                <button className='button is-primary'>My Work</button>
               </div>
             </div>
           </div>

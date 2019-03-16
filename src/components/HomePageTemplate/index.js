@@ -1,8 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Offerings from '../Offerings'
-import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
+import './styles.sass'
 
 const HomePageTemplate = ({
   title,
@@ -11,42 +10,38 @@ const HomePageTemplate = ({
   offerings,
   meta_title,
   meta_description,
-  testimonials,
 }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold is-medium'>
+    <section className='hero is-primary is-large home--hero-bg-img'>
       <div className='hero-body'>
-        <div className='container'>
+        <div className='container has-text-centered'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <h1 className='title'>
                   {title}
                 </h1>
+                <h2 className='subtitle'>
+                  Hero subtitle lorem ipsum dolores
+                </h2>
+                <a className='button is-white is-large home--hero-btn'>See More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section className='section section--gradient'>
-      <div className='container'>
+    {/* <section className='section section--gradient'>
+      <div className='container is-medium'>
 
         <div className='section'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='content'>
-                <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-                <Offerings gridItems={offerings.blurbs} />
                 <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
                 <Testimonials testimonials={testimonials} />
               </div>
@@ -54,7 +49,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
   </div>
 )
 
@@ -67,7 +62,7 @@ HomePageTemplate.propTypes = {
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  testimonials: PropTypes.array,
+  // testimonials: PropTypes.array,
 
 }
 
