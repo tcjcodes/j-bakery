@@ -22,7 +22,7 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
             <div className='column is-6'>
               <div className='section'>
                 <PageContent className='content' content={content} />
-                <button className='button is-primary'>My Work</button>
+                <button className='button is-primary'>view gallery</button>
               </div>
             </div>
           </div>
