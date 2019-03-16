@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import PageHeader from '../PageHeader'
 import './styles.sass'
+import bgImg from '../../../static/img/bake-bakery-baking-5765.jpg'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -46,7 +47,8 @@ class ContactPageTemplate extends Component {
           <title>{meta_title}</title>
           <meta name='description' content={meta_description} />
         </Helmet>
-        <PageHeader title={title} />
+
+        <PageHeader title={title} bgImg={bgImg} />
         <section className='section'>
           <div className='container'>
             <div className='columns is-centered'>

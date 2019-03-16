@@ -2,13 +2,14 @@ import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
 import PageHeader from '../PageHeader'
+import bgImg from '../../../static/img/baking-business-color-859904.jpg'
 
 const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
-      <PageHeader title={title} />
+      <PageHeader title={title} bgImg={bgImg} />
       <section className='section section--gradient'>
         <div className='container'>
           <div className='columns is-vcentered'>

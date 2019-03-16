@@ -4,6 +4,7 @@ import {graphql} from 'gatsby'
 import Helmet from 'react-helmet'
 import PhotoGallery from '../../components/PhotoGallery'
 import PageHeader from '../../components/PageHeader'
+import bgImg from '../../../static/img/baked-bakery-baking-230743.jpg'
 
 const images = [
   {
@@ -11,7 +12,7 @@ const images = [
     alt: 'baked good',
   },
   {
-    url: 'https://loremflickr.com/480/600/cookie?lock=1',
+    url: 'https://loremflickr.com/480/600/cookies?lock=1',
     alt: 'baked good',
   },
   {
@@ -27,7 +28,15 @@ const images = [
     alt: 'baked good',
   },
   {
-    url: 'https://loremflickr.com/480/600/pie?lock=1',
+    url: 'https://loremflickr.com/480/600/apple+pie?lock=1',
+    alt: 'baked good',
+  },
+  {
+    url: 'https://loremflickr.com/480/600/cookie?lock=1',
+    alt: 'baked good',
+  },
+  {
+    url: 'https://loremflickr.com/480/600/matcha?lock=1',
     alt: 'baked good',
   },
 ]
@@ -39,7 +48,7 @@ const GalleryPage = ({data}) => {
         <title>Gallery</title>
         <meta name='description' content='Gallery' />
       </Helmet>
-      <PageHeader title='Gallery' />
+      <PageHeader title='Gallery' bgImg={bgImg}/>
       <div className='section'>
         <PhotoGallery
           title={data.site.siteMetadata.title}

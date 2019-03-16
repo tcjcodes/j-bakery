@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Testimonials from '../../components/Testimonials'
 import PageHeader from '../../components/PageHeader'
 import './styles.sass'
+import bgImg from '../../../static/img/baking-flour-food-1184265.jpg'
 
 const testimonials = [
   {
@@ -28,7 +29,7 @@ const OrderPage = () => {
         <title>Order</title>
         <meta name='description' content='Order' />
       </Helmet>
-      <PageHeader title='Order' />
+      <PageHeader title='Order' bgImg={bgImg} />
 
       <div className='section'>
 
