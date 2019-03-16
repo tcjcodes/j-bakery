@@ -22,7 +22,7 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <h1 className='is-size-1 home--title is-family-special'>
+                <h1 className='home--title is-family-special'>
                   With Love, Ava
                 </h1>
                 <h2 className='is-size-4 home--subtitle'>
@@ -34,21 +34,6 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    {/* <section className='section section--gradient'>
-      <div className='container is-medium'>
-
-        <div className='section'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='content'>
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
   </div>
 )
 

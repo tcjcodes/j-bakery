@@ -50,7 +50,7 @@ class ContactPageTemplate extends Component {
         <section className='section'>
           <div className='container'>
             <div className='columns is-centered'>
-              <div className='column is-three-fifths-desktop'>
+              <div className='column is-two-thirds-desktop'>
                 <h2 className='page-content-title has-text-centered'>
                   Drop a message
                 </h2>
@@ -98,7 +98,7 @@ class ContactPageTemplate extends Component {
 
                   <div className='field'>
                     <div className='control'>
-                      <textarea className='textarea' placeholder='Message' name='message' id='message' rows='6' onChange={this.handleChange} />
+                      <textarea className='textarea is-medium' placeholder='Message' name='message' id='message' rows='6' onChange={this.handleChange} />
                     </div>
                   </div>
 

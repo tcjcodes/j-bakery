@@ -21,7 +21,7 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
             </div>
             <div className='column'>
               <div className='section'>
-                <h2 className='title page-content-title is-size-3'>Meet the Baker</h2>
+                <h2 className='page-content-title'>Behind the bake</h2>
                 <PageContent className='content' content={content} />
               </div>
             </div>

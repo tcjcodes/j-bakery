@@ -78,26 +78,37 @@ nav
   font-weight: normal
   &.is-size-1
     font-size: $size-1 + 2rem !important
+    padding-top: 16px
 
 .page-content-title
   letter-spacing: 3px
   text-transform: $transform
   font-size: $size-4
   font-weight: bold
+  height: $size-1 + 2rem
+  display: block
+  position: relative
   &:after
-    background: none repeat scroll 0 0 $grey-darker
-    bottom: -0.5em
     content: ""
     display: block
     height: 2px
-    position: relative
-    width: 100px
     margin-bottom: 1.25em
+    background: $grey-dark none repeat scroll 0 0
+    bottom: 1em
+    font-size: 20px
+    left: 0
+    margin: auto 0
+    position: absolute
+    right: 0
+    width: 50px
   &.has-text-centered
     &:after
-      position: absolute
-      top: 10%
-      left: 50%
-      transform: translateX(-50%)
+      margin: auto
+
+  &.subtitle
+    font-size: $size-5
+    height: $size-1 + 1.5rem
+    margin-bottom: 0.5rem
+
 
 
