@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'J Bakery', // Site title.
-  siteTitleAlt: 'J Bakery alt', // Alternative site title for SEO.
+  siteTitle: 'With Love, Ava', // Site title.
+  siteTitleAlt: `Seattle local bakery, "With Love, Ava"`, // Alternative site title for SEO.
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
   siteUrl: 'https://<TODO>.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.

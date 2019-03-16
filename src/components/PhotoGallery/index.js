@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import './styles.sass'
 
 const PhotoGallery = ({ title, images, onClick }) => (
-  <div className='section'>
+  <div className='container'>
     <div className='columns is-multiline is-centered'>
-      {images.map((img, index) => (
-        <div className={`column is-one-third `} key={img.url}>
+      {images.map((img) => (
+        <div className={`column is-one-quarter-desktop is-one-third`} key={img.url}>
           <figure className='photo--container image is-3by4'>
             <img className='photo--img'
               src={img.url}
@@ -21,7 +21,7 @@ const PhotoGallery = ({ title, images, onClick }) => (
       ))}
     </div>
     <div className='has-text-centered'>
-      <button className='button is-primary is-medium' onClick={onClick}>View More</button>
+      <button className='button is-primary is-outlined' onClick={onClick}>See More</button>
     </div>
   </div>
 )

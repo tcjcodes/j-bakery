@@ -107,5 +107,23 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `La Belle Aurore`,
+          },
+          {
+            family: `Merriweather`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Lato`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
   ],
 }

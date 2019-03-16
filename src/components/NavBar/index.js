@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link, StaticQuery } from 'gatsby'
+import './styles.sass'
 
 const NavBar = ({toggleNavbar, isActive}) => (
   <StaticQuery
@@ -14,10 +15,10 @@ const NavBar = ({toggleNavbar, isActive}) => (
         `}
     render={data => (
       <nav className='navbar is-fixed-top' aria-label='main navigation'>
-        <div className='container'>
-          <div className='navbar-brand'>
+        <div className='container desktop'>
+          <div className='navbar-brand is-family-special'>
             <Link to='/' className='navbar-item'>
-              <strong>{data.site.siteMetadata.title}</strong>
+              {data.site.siteMetadata.title}
             </Link>
             <button
               className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -31,17 +32,14 @@ const NavBar = ({toggleNavbar, isActive}) => (
           </div>
           <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
             <div className='navbar-end'>
-              <Link className='navbar-item' to='/about'>
-                About
-              </Link>
               <Link className='navbar-item' to='/gallery'>
                 Gallery
               </Link>
-              <Link className='navbar-item' to='/pricing'>
-                Pricing
+              <Link className='navbar-item' to='/order'>
+                Order
               </Link>
-              <Link className='navbar-item' to='/blog'>
-                Blog
+              <Link className='navbar-item' to='/about'>
+                About Me
               </Link>
               <Link className='navbar-item' to='/contact'>
                 Contact

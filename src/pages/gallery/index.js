@@ -40,7 +40,7 @@ const GalleryPage = ({data}) => {
         <meta name='description' content='Gallery' />
       </Helmet>
       <PageHeader title='Gallery' />
-      <div className='container'>
+      <div className='section'>
         <PhotoGallery
           title={data.site.siteMetadata.title}
           images={images}

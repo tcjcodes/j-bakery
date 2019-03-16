@@ -11,18 +11,18 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
       <PageHeader title={title} />
       <section className='section section--gradient'>
         <div className='container'>
-          <div className='columns'>
-            <div className='column is-offset-1 is-4'>
+          <div className='columns is-vcentered'>
+            <div className='column is-4'>
               <figure className='image is-3by4'>
                 <img className=''
                   src='https://placeimg.com/600/900/people'
-                  alt='About J' />
+                  alt='About Me' />
               </figure>
             </div>
-            <div className='column is-6'>
+            <div className='column'>
               <div className='section'>
+                <h2 className='title page-content-title is-size-3'>Meet the Baker</h2>
                 <PageContent className='content' content={content} />
-                <button className='button is-primary'>view gallery</button>
               </div>
             </div>
           </div>

@@ -22,13 +22,12 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <h1 className='title'>
-                  {title}
+                <h1 className='is-size-1 home--title is-family-special'>
+                  With Love, Ava
                 </h1>
-                <h2 className='subtitle'>
-                  Hero subtitle lorem ipsum dolores
+                <h2 className='is-size-4 home--subtitle'>
+                  Baked straight from the heart.
                 </h2>
-                <a className='button is-white is-large home--hero-btn'>See More</a>
               </div>
             </div>
           </div>

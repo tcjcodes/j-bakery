@@ -51,7 +51,7 @@ class ContactPageTemplate extends Component {
           <div className='container'>
             <div className='columns is-centered'>
               <div className='column is-three-fifths-desktop'>
-                <h2 className='is-size-3 has-text-centered'>
+                <h2 className='page-content-title has-text-centered'>
                   Drop a message
                 </h2>
 
