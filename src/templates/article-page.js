@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
+import { graphql } from 'gatsby'
+import { HTMLContent } from '../components/Content'
 import ArticleTemplate from '../components/ArticleTemplate'
 import SE0 from '../components/SEO'
 import Share from '../components/Share'
-import Disqus from '../components/Disqus'
 
 const ArticlePage = ({data}) => {
   const {markdownRemark: post} = data
@@ -34,11 +33,6 @@ const ArticlePage = ({data}) => {
               title={post.frontmatter.title}
               slug={post.fields.slug}
               excerpt={post.frontmatter.meta_description}
-            />
-            <hr />
-            <Disqus
-              title={post.frontmatter.title}
-              slug={post.fields.slug}
             />
           </div>
         </div>
