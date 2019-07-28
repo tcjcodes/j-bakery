@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { navigate } from 'gatsby-link'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
@@ -8,21 +8,21 @@ import bgImg from '../../../static/img/bake-bakery-baking-5765.jpg'
 
 const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
 class ContactPageTemplate extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { isValidated: false }
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     // eslint-disable-next-line
@@ -36,11 +36,11 @@ class ContactPageTemplate extends Component {
     })
       .then(() => navigate(form.getAttribute('action')))
       // eslint-disable-next-line
-      .catch(error => alert(error))
+      .catch((error) => alert(error))
   }
 
-  render () {
-    const {title, subtitle, meta_title, meta_description} = this.props
+  render() {
+    const { title, subtitle, meta_title, meta_description } = this.props
     return (
       <div className='contact'>
         <Helmet>
@@ -58,7 +58,9 @@ class ContactPageTemplate extends Component {
                 </h2>
 
                 <div className='notification'>
-                    Please note that lorem ipsum dolores orders X y z before they can be placed in the oven. Orders typically requrie 3 - 5 weeks notice. Et cetera.
+                  Please note that lorem ipsum dolores orders X y z before they
+                  can be placed in the oven. Orders typically requrie 3 - 5
+                  weeks notice. Et cetera.
                 </div>
 
                 <form
@@ -79,20 +81,40 @@ class ContactPageTemplate extends Component {
                   </div>
                   <div className='field'>
                     <div className='control'>
-                      <input className='input is-medium' type='text'
-                        placeholder='Name' name='name' id='name' onChange={this.handleChange} />
+                      <input
+                        className='input is-medium'
+                        type='text'
+                        placeholder='Name'
+                        name='name'
+                        id='name'
+                        onChange={this.handleChange}
+                      />
                     </div>
                   </div>
                   <div className='field is-horizontal'>
                     <div className='field-body'>
                       <div className='field'>
                         <div className='control'>
-                          <input className='input is-medium' type='email' placeholder='Email' name='email' id='email' onChange={this.handleChange} />
+                          <input
+                            className='input is-medium'
+                            type='email'
+                            placeholder='Email'
+                            name='email'
+                            id='email'
+                            onChange={this.handleChange}
+                          />
                         </div>
                       </div>
                       <div className='field'>
                         <div className='control'>
-                          <input className='input is-medium' type='email' placeholder='Subject' name='subject' id='subject' onChange={this.handleChange} />
+                          <input
+                            className='input is-medium'
+                            type='email'
+                            placeholder='Subject'
+                            name='subject'
+                            id='subject'
+                            onChange={this.handleChange}
+                          />
                         </div>
                       </div>
                     </div>
@@ -100,14 +122,26 @@ class ContactPageTemplate extends Component {
 
                   <div className='field'>
                     <div className='control'>
-                      <textarea className='textarea is-medium' placeholder='Message' name='message' id='message' rows='6' onChange={this.handleChange} />
+                      <textarea
+                        className='textarea is-medium'
+                        placeholder='Message'
+                        name='message'
+                        id='message'
+                        rows='6'
+                        onChange={this.handleChange}
+                      />
                     </div>
                   </div>
 
                   <fieldset disabled>
                     <div className='field is-grouped is-grouped-centered'>
                       <div className='control'>
-                        <button className='button is-primary is-medium' type='submit'>submit</button>
+                        <button
+                          className='button is-primary is-medium'
+                          type='submit'
+                        >
+                          submit
+                        </button>
                       </div>
                     </div>
                   </fieldset>
@@ -119,7 +153,7 @@ class ContactPageTemplate extends Component {
       </div>
     )
   }
-};
+}
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string,

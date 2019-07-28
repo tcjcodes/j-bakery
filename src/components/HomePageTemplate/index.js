@@ -23,7 +23,7 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <h1 className='home--title is-family-special'>
-                  With Love, Ava
+                  with love, Ava
                 </h1>
                 <h2 className='is-size-4 home--subtitle'>
                   Baked straight from the heart.
