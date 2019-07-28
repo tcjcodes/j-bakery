@@ -53,6 +53,7 @@ const GalleryPage = ({data}) => {
         <PhotoGallery
           title={data.site.siteMetadata.title}
           images={images}
+          paginate={true}
           onClick={() => console.log('clicked')}
         />
       </div>

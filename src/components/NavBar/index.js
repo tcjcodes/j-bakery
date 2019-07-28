@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link, StaticQuery } from 'gatsby'
 import './styles.sass'
+import { GALLERY_PAGE, ORDER_PAGE, ABOUT_PAGE, CONTACT_PAGE, HOME_PAGE } from '../common/uris'
 
 const NavBar = ({toggleNavbar, isActive}) => (
   <StaticQuery
@@ -17,7 +18,7 @@ const NavBar = ({toggleNavbar, isActive}) => (
       <nav className='navbar is-fixed-top' aria-label='main navigation'>
         <div className='container desktop'>
           <div className='navbar-brand is-family-special'>
-            <Link to='/' className='navbar-item'>
+            <Link to={HOME_PAGE} className='navbar-item'>
               {data.site.siteMetadata.title}
             </Link>
             <button
@@ -32,16 +33,16 @@ const NavBar = ({toggleNavbar, isActive}) => (
           </div>
           <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
             <div className='navbar-end'>
-              <Link className='navbar-item' to='/gallery'>
+              <Link className='navbar-item' to={GALLERY_PAGE}>
                 Gallery
               </Link>
-              <Link className='navbar-item' to='/order'>
+              <Link className='navbar-item' to={ORDER_PAGE}>
                 Order
               </Link>
-              <Link className='navbar-item' to='/about'>
-                About Me
+              <Link className='navbar-item' to={ABOUT_PAGE}>
+                About
               </Link>
-              <Link className='navbar-item' to='/contact'>
+              <Link className='navbar-item' to={CONTACT_PAGE}>
                 Contact
               </Link>
             </div>

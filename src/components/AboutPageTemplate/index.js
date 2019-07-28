@@ -17,7 +17,7 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
               <figure className='image is-3by4'>
                 <img className=''
                   src='https://placeimg.com/600/900/people'
-                  alt='About Me' />
+                  alt='Julia' />
               </figure>
             </div>
             <div className='column'>

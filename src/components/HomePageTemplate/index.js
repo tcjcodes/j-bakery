@@ -1,16 +1,19 @@
+import { Link } from 'gatsby'
+import { kebabCase } from 'lodash'
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import './styles.sass'
+import { ORDER_PAGE } from '../common/uris'
 
 const HomePageTemplate = ({
-  title,
-  heading,
-  description,
-  offerings,
-  meta_title,
-  meta_description,
-}) => (
+                            title,
+                            heading,
+                            description,
+                            offerings,
+                            meta_title,
+                            meta_description,
+                          }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
@@ -28,6 +31,10 @@ const HomePageTemplate = ({
                 <h2 className='is-size-4 home--subtitle'>
                   Baked straight from the heart.
                 </h2>
+                <Link
+                  className='button is-primary is-medium'
+                  to={ORDER_PAGE}
+                >Place an order</Link>
               </div>
             </div>
           </div>

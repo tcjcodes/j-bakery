@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { navigate } from 'gatsby-link'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
+import { ORDER_PAGE } from '../common/uris'
 import PageHeader from '../PageHeader'
 import './styles.sass'
 import bgImg from '../../../static/img/bake-bakery-baking-5765.jpg'
@@ -13,7 +14,7 @@ const encode = (data) => {
 }
 
 class ContactPageTemplate extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = { isValidated: false }
   }
@@ -39,7 +40,7 @@ class ContactPageTemplate extends Component {
       .catch((error) => alert(error))
   }
 
-  render() {
+  render () {
     const { title, subtitle, meta_title, meta_description } = this.props
     return (
       <div className='contact'>
@@ -58,9 +59,17 @@ class ContactPageTemplate extends Component {
                 </h2>
 
                 <div className='notification'>
-                  Please note that lorem ipsum dolores orders X y z before they
-                  can be placed in the oven. Orders typically requrie 3 - 5
-                  weeks notice. Et cetera.
+                  To place an order, please submit a request through the <a href={ORDER_PAGE}>order form</a> instead.
+                </div>
+
+                <div className='has-text-centered'>
+                  <span className='icon'>
+                    <i className='fa-2x fa fa-facebook-square' />
+                  </span>
+                  {` `}
+                  <span className='icon'>
+                    <i className='fa-2x fa fa-instagram' />
+                  </span>
                 </div>
 
                 <form
