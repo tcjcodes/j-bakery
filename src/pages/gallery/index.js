@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import PhotoGallery from '../../components/PhotoGallery'
 import PageHeader from '../../components/PageHeader'
@@ -41,19 +41,18 @@ const images = [
   },
 ]
 
-const GalleryPage = ({data}) => {
+const GalleryPage = ({ data }) => {
   return (
     <div>
       <Helmet>
         <title>Gallery</title>
         <meta name='description' content='Gallery' />
       </Helmet>
-      <PageHeader title='Gallery' bgImg={bgImg}/>
+      <PageHeader title='Gallery' bgImg={bgImg} />
       <div className='section'>
         <PhotoGallery
           title={data.site.siteMetadata.title}
           images={images}
-          paginate={true}
           onClick={() => console.log('clicked')}
         />
       </div>
@@ -69,10 +68,10 @@ export default GalleryPage
 
 export const galleryPageQuery = graphql`
   query GalleryPage {
-      site {
-          siteMetadata {
-              title
-          }
+    site {
+      siteMetadata {
+        title
       }
+    }
   }
 `

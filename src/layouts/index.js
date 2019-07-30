@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import '../assets/sass/styles.sass'
+import '../assets/sass/theme.sass'
 import config from '../../data/config'
 
 class TemplateWrapper extends Component {

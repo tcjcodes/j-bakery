@@ -30,6 +30,8 @@ $transform: uppercase
 
 ///// ELEMENTS + COMPONENTS
 $navbar-height: 4.5rem
+$button-padding-horizontal: 1.75em
+$button-padding-vertical: 1.75em
 
 /// NAVBAR
 $navbar-item-color: $link
@@ -39,7 +41,14 @@ $navbar-item-active-color: $link-active
 $navbar-item-active-background-color: transparent
 $navbar-item-hover-background-color: transparent
 
+$calendar-border-radius: $radius-small
+
 @import "~bulma/bulma"
+@import "~bulma-calendar/src/sass/index"
+
+/// CALENDAR
+
+/// THEME
 
 .container
   max-width: $desktop - $gap
@@ -64,6 +73,13 @@ nav
 
 .button
   font-weight: bold
+  text-transform: uppercase
+  &.is-medium
+    font-size: $size-small
+    letter-spacing: 0.1rem
+  &.is-large
+    font-size: $size-medium
+    letter-spacing: 0.25rem
 
 .content
   h1, h2, h3, h4, h5, h6

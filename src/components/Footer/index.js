@@ -17,8 +17,7 @@ const Footer = () => {
           </p>
 
           <p>
-            {config.copyright} {new Date().getFullYear()}.{` `}
-                                                         Powered by <a href='https://www.gatsbyjs.org'>Gatsby</a> and <a
+            {config.copyright} {new Date().getFullYear()}. Powered by <a href='https://www.gatsbyjs.org'>Gatsby</a> and <a
             href='https://www.netlifycms.org'
           >Netlify CMS</a>.
           </p>

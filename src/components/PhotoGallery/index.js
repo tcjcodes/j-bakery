@@ -4,7 +4,7 @@ import './styles.sass'
 import GalleryImage from './GalleryImage'
 
 const PhotoGallery = ({ images, paginate, onClick }) => (
-  <div className='container'>
+  <div className='photo-gallery'>
     <div className='columns is-multiline is-centered'>
       {images.map((img) => <GalleryImage image={img} key={img.url} />)}
     </div>

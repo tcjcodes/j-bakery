@@ -32,7 +32,7 @@ const HomePageTemplate = ({
                   Baked straight from the heart.
                 </h2>
                 <Link
-                  className='button is-primary is-medium'
+                  className='button is-light is-medium'
                   to={ORDER_PAGE}
                 >Place an order</Link>
               </div>
