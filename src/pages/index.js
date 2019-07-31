@@ -21,7 +21,7 @@ const IndexPage = () => (
               <Link
                 className='button is-light is-medium'
                 to={ORDER_PAGE}
-              >Place an order</Link>
+              >Request an Order</Link>
             </div>
           </div>
         </div>

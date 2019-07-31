@@ -6,7 +6,6 @@ import bgImg from '../../../static/img/baking-flour-food-1184265.jpg'
 import OrderRequestForm from '../../components/OrderRequestForm'
 import PageHeader from '../../components/PageHeader'
 import './styles.sass'
-import PhotoGallery from '../../components/PhotoGallery'
 
 const images = [
   {
@@ -36,7 +35,7 @@ const OrderPage = () => {
 
       <div className='section'>
         <div className='container'>
-          <h2 className='page-content-title has-text-centered'>This Month's Flavors</h2>
+          <h2 className='top-title page-content-title has-text-centered'>This Month's Flavors</h2>
           <div className='columns'>
             <div className='column'>
               <div className='card'>
@@ -72,7 +71,7 @@ const OrderPage = () => {
                   </figure>
                 </div>
                 <div className='card-content'>
-                  <span className='flavor-title title is-family-special'>Blueberry cupcakes</span>
+                  <span className='flavor-title title is-family-special'>Blueberry gluten-free vegan cupcakes</span>
                   <p className=''>Chocolatey goodness. Available in Gluten-Free, Vegan, and Chocolate Chip.</p>
                 </div>
               </div>
