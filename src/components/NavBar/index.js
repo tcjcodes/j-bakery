@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link, StaticQuery } from 'gatsby'
 import './styles.sass'
-import { GALLERY_PAGE, ORDER_PAGE, ABOUT_PAGE, CONTACT_PAGE, HOME_PAGE } from '../common/uris'
+import { GALLERY_PAGE, ORDER_PAGE, ABOUT_PAGE, CONTACT_PAGE, HOME_PAGE } from '../../common/uris'
 
 const NavBar = ({toggleNavbar, isActive}) => (
   <StaticQuery

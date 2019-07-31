@@ -1,6 +1,6 @@
 import React from 'react'
 import config from '../../../data/config'
-import { FB_LINK, IG_LINK } from '../common/uris'
+import { FB_LINK, IG_LINK } from '../../common/uris'
 
 const Footer = () => {
   return (
