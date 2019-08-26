@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import PageHeader from '../PageHeader'
 import bgImg from '../../../static/img/baking-business-color-859904.jpg'
 
-const AboutPageTemplate = ({title, content, contentComponent}) => {
+const AboutPageTemplate = ({ title, content, contentComponent, imgUrl }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -15,9 +15,11 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
           <div className='columns is-vcentered'>
             <div className='column is-4'>
               <figure className='image is-3by4'>
-                <img className=''
-                  src='https://placeimg.com/600/900/people'
-                  alt='Julia' />
+                <img
+                  className=''
+                  src={imgUrl}
+                  alt='About "with love, Ava"'
+                />
               </figure>
             </div>
             <div className='column'>
@@ -37,6 +39,7 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  imgUrl: PropTypes.string.isRequired,
 }
 
 export default AboutPageTemplate

@@ -4,21 +4,22 @@ import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
 import {HTMLContent} from '../components/Content'
 import AboutPageTemplate from '../components/AboutPageTemplate'
+import SiteTitle from '../components/SiteTitle/SiteTitle'
+import * as aboutImg from '../../public/img/about_v0.jpg'
 
 const AboutPage = ({data}) => {
   const {markdownRemark: post} = data
-
   return (
     <div>
       <Helmet>
-        <title>{post.frontmatter.meta_title}</title>
-        <meta name='description' content={post.frontmatter.meta_description} />
+        <SiteTitle metaTitle={post.frontmatter.meta_title} />
       </Helmet>
       <AboutPageTemplate
         label={post.label}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        imgUrl={aboutImg}
       />
     </div>
   )
